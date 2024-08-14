@@ -1,2 +1,2 @@
 # CS61A
-#UCB CS61A fall 2020
+UCB CS61A fall 2020
