@@ -1,0 +1,15 @@
+while score0 < goal and score1 < goal :
+        if who == 0:
+            player0_num_dice = strategy0(score0, score1)
+            score0 += take_turn(player0_num_dice,score1, dice)
+            while extra_turn(score0, score1):
+                player0_num_dice = strategy0(score0, score1)
+                score0 += take_turn(player0_num_dice,score1, dice)
+            who = other(who)
+        else:
+            player1_num_dice = strategy1(score1, score0)
+            score1 += take_turn(player1_num_dice,score0, dice)
+            while extra_turn(score1, score0):
+                player1_num_dice = strategy1(score1, score0)
+                score1 += take_turn(player1_num_dice,score0, dice)
+            who = other(who)
